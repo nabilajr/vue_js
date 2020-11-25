@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Latihan2 part 1</title>
+    </head>
+    <body>
+        <div id="lat2">
+            <button v-on:click="greet">Greet</button>
+        </div>
+        <script src="lat2.js"></script>
+        <script>
+            var lat2 = new Vue({
+                el: '#lat2',
+                data: {
+                    name: 'Nabila Jennanda Ridwan'
+                },
+                methods: {
+                    greet: function (event) {
+                        alert('Hello' + this.name + '|')
+                    }
+                }
+            });
+            vm.greet();
+        </script>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdn/jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Latihan 2 part 2</title>
+    </head>
+    <body>
+        <div id="lat2">
+            <img v-bind:src="url">
+        </div>
+        <script src="lat2.js"></script>
+        <script>
+        var lat2 = new Vue({
+            el: '#lat2',
+            data  : {
+                'url' : 'https://www.fullstackpython.som/img/logos/vuejs-wide.png'
+
+            }
+        });
+        </script>
+    </body>
+</html>
